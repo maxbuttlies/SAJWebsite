@@ -1,0 +1,240 @@
+@import url(http://fonts.googleapis.com/css?family=Muli)
+
+*
+	font-family: 'Muli', sans-serif
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+.clearBoth
+	&:after
+		display: table
+		clear: both
+		content: ''
+
+.inner
+	width: 760px
+	margin: 0 auto
+	@media all and (max-width: 760px)
+		width: calc(100% - 10px)
+		padding: 0 10px
+
+html,body
+	height: 100%
+	&#kanu
+		background: url("../img/schweden/image021.jpg") fixed 
+		background-size: cover
+		background-position: center
+
+header
+	background: rgba(255,255,255,0.3)
+	position: fixed
+	width: 100%
+	z-index: 99	
+	@media all and (max-width: 760px)
+		.inner 
+			padding: 0 
+			width: 100%
+
+
+	h1
+		padding: 10px
+		float: left
+		font-size: 16px
+		a
+			color: #000
+			text-decoration: none
+		@media all and (max-width: 760px)	
+			display: none
+	#nav
+		float: right
+		.show, .hide
+			display: none
+			width: 25px
+			height: 25px
+			float: right
+			padding: 5px
+			color: #000
+		ul
+			li
+				list-style: none
+				a
+					padding: 12px
+					font-size: 12px
+					display: inline-block
+					color: #000
+					text-decoration: none
+					font-weight: bold
+					&:hover
+						background: #009702
+						color: #fff
+		@media all and (max-width: 760px)	
+			width: 100%
+			ul
+				display: none
+				li
+					a
+						width: 100%	
+			.show
+				display: block
+			&:target > ul
+				display: block
+			&:target:not > ul
+				display: none
+			&:target > .hide
+				display: block
+			&:target:not > .hide
+				display: none
+			&:target > .show
+				display: none
+
+main
+	height: 100%
+	section
+		min-height: 200px
+		padding: 50px 0
+		width: 100%
+		color: #fff
+		font-size: 22px
+		@media all and (max-width: 760px)
+			font-size: 15px
+			min-height: 10px
+
+		&.divider
+			background-size: cover
+			background-position: center
+			height: 300px 
+			@media all and (max-width: 760px)
+				height: 150px
+		h2
+			font-size: 50px
+			@media all and (max-width: 760px)
+				font-size: 20px
+
+		a
+			color: #fff
+			text-decoration: none
+			border-bottom: 1px #eee solid	
+		p			
+			margin: 5px 0	
+		
+	.start
+		background: url('../img/start.jpg') #000 fixed
+		background-size: cover
+		height: 100%
+		width: 100%
+		position: relative
+		@media all and (max-width: 760px)
+			height: 500px
+		.logo
+			width: 400px
+			background: rgba(255,255,255,0.3)
+			padding: 40px 20px
+			border-radius: 10px
+			position: absolute
+			left: 50%
+			position: absolute
+			top: calc(50% - 40px)
+			transform: translateX(-50%) translateY(-50%)
+			@media all and (max-width: 760px)
+				width: 50%
+
+	#news
+		background: #006801			
+		ul
+			margin-top: 10px
+			li
+				list-style: none
+	.news
+		background: url('../img/news.jpg')  fixed
+	#about
+		background: #007902			
+	.about
+		background: url('../img/about.jpg')  fixed
+	#contact
+		background: #000
+		p 
+			font-size: 50px 
+			@media all and (max-width: 760px)
+				font-size: 20px
+
+#kanu
+	main
+		#wrapper
+			width: 760px
+			margin: 0 auto
+			padding-bottom: 20px
+			@media all and (max-width: 760px)
+				width: 100%
+			section
+				color: #000
+				min-height: 260px
+				img
+					float: left
+					height: auto
+					width: calc(50% - 20px)
+					background-color: #fff
+					@media all and (max-width: 760px)
+						float: none
+						width: 100%
+
+				.inner
+					width: calc(50% - 10px)
+					float: left
+					font-size: 14px	
+					padding: 10px
+					background: #fff
+					margin: 10px
+					@media all and (max-width: 760px)
+						float: none
+						width: 100%
+					ul
+						li
+							list-style: none
+
+		#wrapperMitfahrenKosten	
+			background: #fff							
+			.inner		
+				width: 760px
+				@media all and (max-width: 760px)
+					width: 100%
+				#mitfahren, #kosten
+					padding: 10px
+					float: left
+					width: 50%
+					color: #000
+					@media all and (max-width: 760px)
+						float: none
+						width: 100%
+					h2
+						font-size: 20px
+					.inner
+						width: 100%
+						font-size: 14px	
+						li
+							margin-left: 50px
+
+
+		.start
+			background: none
+			text-align: center
+			color: #000
+			.inner
+				margin-top: 20%
+				transform: translateY(-50%)
+				a
+					color: #000
+					border-color: #000
+					padding-top: -10px
+
+		.about
+			background: url("../img/schweden/image020.jpg") fixed center
+			height: 500px
+		h2
+			text-align: center
+	
+		
+	
+		
+	
+
